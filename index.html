@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div>
+      <button id="clickButton">click Now</button>
+
+      <p id="clickMessage"></p>
+    </div>
+
+    <script>
+      const clickButton = document.getElementById("clickButton");
+
+      const clickMessage = document.getElementById("clickMessage");
+
+      clickButton.addEventListener("click", function () {
+        clickMessage.innerHTML = "You clicked the button!";
+      });
+    </script> -->
+
+    <form id="myForm">
+      <input type="text" name="userName" placeholder="Enter your name" />
+
+      <button type="submit">Submit</button>
+
+      <p id="forMessage"></p>
+    </form>
+
+    <script>
+      const myForm = document.getElementById("myForm");
+
+      const forMessage = document.getElementById("forMessage");
+
+      myForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        forMessage.innerHTML = "You submitted the form!";
+      });
+    </script>
+  </body>
+</html>
